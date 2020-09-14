@@ -28,8 +28,8 @@ Steps to install dhcp server in Ubuntu 16.04:-
   sudo vi /etc/dhcp/dhcpd.conf.
   Modify it as shown below. Replace the domain name with your own values.
   Enter the domain name and domain-name-servers:
-  option domain-name "mohdubaid011.lan";
-  option domain-name-servers ubuntuserver.mohdubaid011.lan;
+  option domain-name "vishalomanakuttan23.lan";
+  option domain-name-servers ubuntuserver.vishalomanakuttan23.lan;
   
 8.Configuring DHCP in Ubuntu 16.04:-
   Then we must edit in the following
