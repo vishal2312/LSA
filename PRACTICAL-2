@@ -2,33 +2,33 @@
                               Configure Services, display the list of services which are running, Stop and turn OFF auto-start setting 
                               for a service if you don’t need it, Sudo Settings.
 
-Step 1 : Add a User 
+1 : Add a User 
 Command :- adduser username
 
-Step 2 : Network Setting 
+2 : Network Setting 
 IP Address
 Command :- sudo ifconfig -a
 
-Step 3 : IP address and Netmask Network Configuration
+3 : IP address and Netmask Network Configuration
 Command:- sudo ifconfig eth0 192.168.1.10 netmask 255.255.255.0
 
-Step 4 : Configure Services
+4 : Configure Services
 Command :- service ssh start
 Command :- ssh username@hostname
 
-Step 5 : Basic Command To Run , Enable , Start and Stop Services
+5 : Basic Command To Run , Enable , Start and Stop Services
 Command :- systemctl [command] [service_name]
 
-Step 6: To stop and restart the service in Linux, use the command:
+6: To stop and restart the service in Linux, use the command:
 Command :- sudo systemctl restart SERVICE_NAME
 Command :- sudo systemctl stop SERVICE_NAME
 
-Step 7: To Enable Services At Boot
+7: To Enable Services At Boot
 Command :- sudo systemctl enable SERVICE_NAME
 
-Step 8 : To display the list of services which are running 
+8 : To display the list of services which are running 
 Command :- sudo systemctl -t=service --state=running
 
-Step 9 : Use the Sudo settings
+9 : Use the Sudo settings
 Command :- sudo apt install -y software_name
 Any Command Which Are Used With Sudo Give A User A Super User Advantage.
