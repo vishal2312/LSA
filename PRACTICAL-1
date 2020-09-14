@@ -9,29 +9,29 @@ configurations from a server.
 
 Steps to install dhcp server in Ubuntu 16.04:-
 
-Step 1 :- Installing DHCP Server 
+1 :- Installing DHCP Server 
 Run the command below to install the DHCP server package
 Command  :- sudo apt-get -y install isc-dhcp-server
 Now edit the file /etc/default/isc-dhcp-server to define the interfaces DHCPD should use to serve DHCP requests, with the INTERFACES option
 Command :- Change Interface Option (INTERFACES="eth0")
 
 
-Step 2 :- Configure DHCP Server
+2 :- Configure DHCP Server
 After This We Have To Configure DHCP Server
 DHCP configuration file is present at /etc/dhcp/dhcpd.conf
 
-Step 3: Open And Modify DHCP File
+3: Open And Modify DHCP File
 sudo vi /etc/dhcp/dhcpd.conf
 
-Step 4 : Configure your dhcpd.conf by directly editing through a path 
+4 : Configure your dhcpd.conf by directly editing through a path 
 Command :- $sudo nano /etc/dhcp/dhcpd.conf
 Replace Ip Address Of dhcpd.conf with your ip address.
 
-Step 6 : To Know Your Ip Address 
+6 : To Know Your Ip Address 
 Command :- ip addr OR ipconfig
 After Change Save And Exit
 
-Step 7 : Enable the services use the command
+7 : Enable the services use the command
 Command :- $sudo systemctl enable isc-dhcp-server.service
 And Now Start The Service.
 Command :- $sudo systemctl start isc-dhcp-server.service
